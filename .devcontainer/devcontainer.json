@@ -22,7 +22,7 @@
 			"bazelisk": "latest"
 		},
 		"ghcr.io/akhildevelops/devcontainer-features/android-cli:latest": {
-			"PACKAGES": "platform-tools,platforms;android-33,build-tools;33.0.2"
+			"PACKAGES": "platform-tools,platforms;android-33,build-tools;33.0.2,ndk;26.3.11579264"
 		}
 	}
 
