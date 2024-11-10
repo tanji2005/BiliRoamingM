@@ -39,3 +39,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: ./gradlew --no-daemon -Dorg.gradle.jvmargs=-Xmx2g dist
+
+      - name: Upload Build Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-artifacts
+          path: |
+            build/libs/*.jar
+            build/distributions/*.zip
