@@ -1,7 +1,7 @@
-name: PR Check
+name: Build and Upload Artifacts
 
 on:
-  pull_request:
+  push:
     paths-ignore:
       - '**.md'
       - '.github/**'
